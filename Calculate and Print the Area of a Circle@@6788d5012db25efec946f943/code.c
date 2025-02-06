@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define PI 3.141592653589793  // More precise value of π
+#define PI 3.14  // More precise value of π
 
 int main() {
     double radius, area;
@@ -12,7 +12,7 @@ int main() {
     area = PI * radius * radius;
 
     // Print output with exact format (up to 6 decimal places)
-    printf("Area: %.6lf\n", area);
+    printf("Area: %.4lf\n", area);
 
     return 0;
 }
