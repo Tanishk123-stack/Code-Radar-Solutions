@@ -8,7 +8,7 @@ int main() {
     
     scanf("%s", name);         
     scanf("%d", &age);         
-    scanf("%s", hobby)
+    scanf("%c", hobby)
 
     
     int len = strlen(hobby);
