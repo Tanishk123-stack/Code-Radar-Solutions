@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+#define PI 3.14159  // Define constant for π
 
 int main() {
     double radius, area;
