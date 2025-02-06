@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-#define PI 3.14159  // Define constant for π
+#define PI 3.141592653589793  // More precise value of π
 
 int main() {
-    double radius, Area;
+    double radius, area;
 
-    
+    // Read input
     scanf("%lf", &radius);
 
-    
-    Area = PI * radius * radius;
+    // Compute area (π * r²)
+    area = PI * radius * radius;
 
-    
-    printf("Area: %.2lf\n", Area);
+    // Print output with exact format (up to 6 decimal places)
+    printf("Area: %.6lf\n", area);
 
     return 0;
 }
+
