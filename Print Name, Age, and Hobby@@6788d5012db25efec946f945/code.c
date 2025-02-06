@@ -8,7 +8,8 @@ int main() {
     
     scanf("%s", name);         
     scanf("%d", &age);         
-    scanf("%c", hobby)
+    getchar();                 
+    fgets(hobby, sizeof(hobby), stdin); /
 
     
     int len = strlen(hobby);
