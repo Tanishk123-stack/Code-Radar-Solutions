@@ -12,7 +12,7 @@ int main() {
     area = PI * radius * radius;
 
     // Print output with exact format (up to 6 decimal places)
-    printf("Area: %.4lf\n", area);
+    printf("Area: %.2lf\n", area);
 
     return 0;
 }
