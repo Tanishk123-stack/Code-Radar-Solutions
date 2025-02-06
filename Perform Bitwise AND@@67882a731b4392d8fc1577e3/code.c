@@ -7,9 +7,6 @@ int main() {
 
     if (result) { 
         printf("%d\n", result);
-    } else {
-        printf("Result is 0\n"); 
-    }
-
+    } 
     return 0;
 }
