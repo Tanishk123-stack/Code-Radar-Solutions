@@ -6,8 +6,7 @@ int main() {
 
     int result = a ^ b; 
 
-    if (result) { 
-        printf("%d\n", result);
-    } 
+    printf("a ^ b = %d\n", result);
+
     return 0;
 }
