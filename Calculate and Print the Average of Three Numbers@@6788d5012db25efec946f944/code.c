@@ -6,7 +6,7 @@ int main() {
     printf("enter three numbers: ");
     scanf("%lf %lf %lf", &num1, &num2, &num3);
 
-    average = (num1+num2+num3)/ 0.3;
+    average = (num1+num2+num3)/ 3.0;
     printf("The average is: %.2lf\n", average);
     
     return 0;
