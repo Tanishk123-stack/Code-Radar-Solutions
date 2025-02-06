@@ -2,7 +2,7 @@
 
 
 int main() {
-    double num1, num2, num3;
+    double num1, num2, num3, average;
     printf("enter three numbers: ");
     scanf("%lf %lf %lf", &num1, &num2, &num3);
 
