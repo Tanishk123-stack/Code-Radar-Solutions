@@ -7,7 +7,7 @@ int main() {
     int result = a | b; 
 
     if (result) { 
-        printf("a | b = %d\n", result);
+        printf("%d\n", result);
     } else {
         printf("Result is 0\n"); 
     }
