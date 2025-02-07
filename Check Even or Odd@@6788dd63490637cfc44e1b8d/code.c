@@ -7,7 +7,7 @@ int main() {
     if(n%2 == 0){
     printf("Even");}
     else{
-        printf("odd")
+        printf("odd");
     }
     
     return 0;
