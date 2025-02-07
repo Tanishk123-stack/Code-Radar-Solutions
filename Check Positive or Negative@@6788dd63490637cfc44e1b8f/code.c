@@ -10,7 +10,7 @@ int main() {
     }else{
         printf("Negative");
     }
-    else if(n==0){
+    else if(n=0){
         printf("Zero");
     }
    
