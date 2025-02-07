@@ -7,12 +7,13 @@ int main() {
 
     if(n>0){
         printf("Positive");
-    }else{
-        printf("Negative");
-    }
     else if(n=0){
         printf("Zero");
     }
+    }else{
+        printf("Negative");
+    }
+    
    
     return 0;
 }
