@@ -5,12 +5,12 @@ int main() {
 
     scanf("%d %d %d", &a, &b, &c);
 
-    if (a > b && a > c)
-        printf("%d\n", a);
-    else if (b > c);
-        printf("%d\n", b);
+    if (a >= b && a >= c)
+    printf("%d\n", a);
+    else if (b >= c)
+    printf("%d\n", b);
     else
-        printf("%d\n", c);
+    printf("%d\n", c);
 
     return 0;
 }
