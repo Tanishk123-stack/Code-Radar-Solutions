@@ -2,7 +2,7 @@
 
 
 int main() {
-    int n , i, j;
+    int n , i, j, k;
     snanf("%d", n);
 
     for(int i = 1; i <= n;i++){
