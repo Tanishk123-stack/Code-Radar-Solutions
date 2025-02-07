@@ -15,13 +15,13 @@ int main() {
     else if (ch >= '0' && ch <= '9') {
         printf("Digit\n");
     } 
-    // Check for consonants (letters that are not vowels)
+    
     else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
         printf("Consonant\n");
     } 
-    // If it's none of the above, it's a special character
+    
     else {
         printf("Special Character\n");
     }
      return 0;
-     }
+}
