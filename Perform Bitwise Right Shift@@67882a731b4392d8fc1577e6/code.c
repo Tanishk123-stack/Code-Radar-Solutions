@@ -8,7 +8,7 @@ int main() {
 
    int result = num>>shitf;
 
-   printf("%d", result);
+   printf("%d\n", result);
    
     return 0;
 }
