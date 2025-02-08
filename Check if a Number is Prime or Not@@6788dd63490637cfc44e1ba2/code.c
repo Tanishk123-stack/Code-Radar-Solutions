@@ -15,13 +15,13 @@ bool is_prime(int n) {
 
 int main() {
     int n;
-    printf("Enter a number: ");
+    
     scanf("%d", &n);
 
     if (is_prime(n)) {
-        printf("%d is a prime number.\n", n);
+        printf("Prime");
     } else {
-        printf("%d is not a prime number.\n", n);
+        printf("Not Prime");
     }
 
     return 0;
