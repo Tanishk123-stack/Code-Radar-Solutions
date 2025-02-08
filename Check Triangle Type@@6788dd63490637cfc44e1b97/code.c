@@ -7,9 +7,10 @@ int main() {
     if(a + b >c && a + c >b && b +c > a){
         if(a == b && b == c)
         printf("equilateral\n");
-        if(a == b && b == c && a == c)
+        else if(a == b && b == c && a == c)
         printf("isosceles\n");
         else
-        printf("Scalene\n");}
+        printf("Scalene\n");
+        }
         return 0;
 }
