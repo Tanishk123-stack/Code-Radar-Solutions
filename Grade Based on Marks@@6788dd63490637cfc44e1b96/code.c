@@ -3,7 +3,7 @@
 
 int main() {
     int marks;
-    scanf("%d", &grades);
+    scanf("%d", &marks);
 
     if(marks >= 90)
     printf("A");
