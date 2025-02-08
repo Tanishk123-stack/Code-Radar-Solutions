@@ -10,5 +10,5 @@ void main() {
         return false;
     }
    }
-   return true
+   return true;
 }
