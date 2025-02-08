@@ -5,9 +5,9 @@ int main() {
     scanf("%d %d", &num, &divisor);
 
     if (num % divisor == 0)
-        printf("%d is divisible by %d\n", num, divisor);
+        printf("Yes");
     else
-        printf("%d is not divisible by %d\n", num, divisor);
+        printf("No");
 
     return 0;
 }
