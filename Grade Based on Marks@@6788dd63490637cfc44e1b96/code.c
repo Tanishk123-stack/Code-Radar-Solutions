@@ -2,7 +2,7 @@
 
 
 int main() {
-    int grades, marks;
+    int marks;
     scanf("%d", &grades);
 
     if(marks >= 90)
