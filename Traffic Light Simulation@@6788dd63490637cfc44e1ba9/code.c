@@ -18,7 +18,7 @@ int main() {
     case 'Y':
         printf("Slow Down\n");
         break;
-    default;
+    default:
         printf("Invalid Input\n");
         }
     return 0;
