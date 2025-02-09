@@ -3,8 +3,6 @@
 int main() {
     int num1, num2;
     char op;
-
-    printf("Enter two numbers and an operator (+, -, *, /): ");
     scanf("%d %d %c", &num1, &num2, &op);
 
     switch(op) {
@@ -19,7 +17,7 @@ int main() {
             break;
         case '/':
             if (num2 == 0) {
-                printf("Error: Division by zero\n");
+                printf("Error\n");
             } else {
                 printf("%d\n", num1 / num2);
             }
