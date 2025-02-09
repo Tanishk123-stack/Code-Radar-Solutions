@@ -8,7 +8,7 @@ int main() {
     char traffic;
     scanf("%c", &traffic);
 
-    switch(traffic)
+    switch(traffic){
     case 'R':
     printf("Stop");
     break;
@@ -19,6 +19,6 @@ int main() {
     printf("Slow Down");
     break;
     default;
-    printf("Invalid Input");
+    printf("Invalid Input");}
     return 0;
 }
