@@ -10,16 +10,16 @@ int main() {
 
     switch(traffic){
     case 'R':
-        printf("Stop");
+        printf("Stop\n");
         break;
     case 'G':
-        printf("Go");
+        printf("Go\n");
             break;
     case 'Y':
-        printf("Slow Down");
+        printf("Slow Down\n");
         break;
     default;
-        printf("Invalid Input");
+        printf("Invalid Input\n");
         }
     return 0;
 }
