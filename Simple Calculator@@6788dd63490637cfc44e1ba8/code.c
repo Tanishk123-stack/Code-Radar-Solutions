@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-
 int main() {
     int num1, num2;
     char op;
 
     printf("Enter two numbers and an operator (+, -, *, /): ");
     scanf("%d %d %c", &num1, &num2, &op);
-
 
     switch(op) {
         case '+':
@@ -32,4 +30,3 @@ int main() {
 
     return 0;
 }
-    
