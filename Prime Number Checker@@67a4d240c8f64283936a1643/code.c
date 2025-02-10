@@ -2,14 +2,14 @@
 
 int isPrime(int n) {
     if (n < 2) {
-        return 0; // 0 and 1 are not prime
+        return 0; 
     }
-    for (int i = 2; i * i <= n; i++) { // Loop till sqrt(n)
+    for (int i = 2; i * i <= n; i++) { 
         if (n % i == 0) {
-            return 0; // Not prime
+            return 0;
         }
     }
-    return 1; // Prime
+    return 1; 
 }
 
 int main() {
@@ -22,6 +22,5 @@ int main() {
     } else {
         printf("%d is not a prime number.\n", n);
     }
-
-    return 0;
+    return 0;
 }
