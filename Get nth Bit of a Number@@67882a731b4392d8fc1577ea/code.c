@@ -10,7 +10,7 @@ int main() {
     if (num & (1 << n))
         printf("1");
     else
-        printf("Not Set\n");
+        printf("0");
 
     return 0;
 }
