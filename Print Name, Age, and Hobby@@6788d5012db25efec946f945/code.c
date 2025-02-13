@@ -18,7 +18,7 @@ int main() {
         hobby[len - 1] = '\0';
     }
 
-    // Printing output
+    
     printf("Name: %s\n", name);
     printf("Age: %d\n", age);
     printf("Hobby: %s\n", hobby);
