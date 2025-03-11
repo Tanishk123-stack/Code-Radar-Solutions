@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 struct Student{
-    int roll number;
+    int rollNumber;
     char name[50];
     float marks;
 }
@@ -21,9 +21,5 @@ int main{
     printf("Average Marks: %.2f\n", averageMarks);
 
     return 0;
-
-
-
-
 
 }
