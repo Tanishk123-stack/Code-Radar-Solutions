@@ -7,30 +7,25 @@ struct Student {
 };
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    
-    struct Student students[n], topScorer;
-    
-    for (int i = 0; i < n; i++) {
+    int N, count = 0;
+    scanf("%d", &N);
+
+    struct Student students[N];
+
+    for (int i = 0; i < N; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
+    }
 
-        float threshold;
-        scanf("%f", &threshold);
+    float threshold;
+    scanf("%f", &threshold);
 
-        for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++) {
         if (students[i].marks > threshold) {
             count++;
         }
     }
 
-        printf("%d\n", count);
+    printf("%d\n", count);
 
-
-
-
-
-
-        return 0;
-    }
+    return 0;
 }
