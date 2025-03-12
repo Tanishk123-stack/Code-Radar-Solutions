@@ -1,5 +1,5 @@
 // Your code here...
-4#include <stdio.h>
+#include <stdio.h>
 
 int main() {
     int num, count = 0;
