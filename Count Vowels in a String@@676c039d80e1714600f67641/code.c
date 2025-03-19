@@ -4,8 +4,6 @@
 int main() {
     char str[100]; // Declare a string with a reasonable size
     int count = 0; // Counter for vowels
-
-    printf("Enter a string: ");
     scanf("%s", str);
 
     // Loop through the string
@@ -18,6 +16,6 @@ int main() {
         }
     }
 
-    printf("Number of vowels: %d\n", count);
+    printf(" %d\n", count);
     return 0;
 }
