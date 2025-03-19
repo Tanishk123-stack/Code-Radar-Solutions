@@ -6,9 +6,9 @@ int main() {
 
     // Loop for each row
     for (int i = N; i >= 1; i--) {
-        // Print numbers in reverse order
-        for (int j = i; j >= 1; j--) {
-            printf("%d", j);
+        // Print numbers in reverse order with spaces
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", j);
         }
         printf("\n");
     }
