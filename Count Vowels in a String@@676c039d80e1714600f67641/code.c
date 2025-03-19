@@ -4,7 +4,8 @@
 int main() {
     char str[100]; // Declare a string with a reasonable size
     int count = 0; // Counter for vowels
-    scanf("%s", str);
+
+    fgets(str, sizeof(str), stdin); // Use fgets to read the entire line, including spaces
 
     // Loop through the string
     for (int i = 0; i < strlen(str); i++) {
@@ -16,6 +17,6 @@ int main() {
         }
     }
 
-    printf(" %d\n", count);
+    printf("%d\n", count);
     return 0;
 }
