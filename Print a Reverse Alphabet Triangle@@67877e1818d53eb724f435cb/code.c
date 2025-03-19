@@ -2,10 +2,10 @@
 
 int main() {
     int N;
-    scanf("%d", &N);  // Read the number of rows
+    scanf("%d", &N);  // Read number of rows
 
-    for (int i = 1; i <= N; i++) {  // Loop for rows
-        for (char ch = 'A' + i - 1; ch >= 'A'; ch--) {  // Loop for alphabets in reverse
+    for (int i = N; i >= 1; i--) {  // Loop for rows (reverse order)
+        for (char ch = 'A'; ch < 'A' + i; ch++) {  // Print A to current row number
             printf("%c ", ch);
         }
         printf("\n");  // Move to the next line
