@@ -6,11 +6,11 @@ int main() {
 
     // Loop for each row
     for (int i = 0; i < N; i++) {
-        // Print alphabets starting from 'A'
+        // Print alphabets with spaces
         for (int j = 0; j <= i; j++) {
-            printf("%c", 'A' + j);
+            printf("%c ", 'A' + j);
         }
-        printf("\n");
+        printf("\n"); // Move to the next line after each row
     }
 
     return 0;
