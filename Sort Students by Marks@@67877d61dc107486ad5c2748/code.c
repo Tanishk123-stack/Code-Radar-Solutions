@@ -33,4 +33,6 @@ int main() {
     struct Student students[n];
     
     for (int i = 0; i < n; i++) {
-        scanf("%d %s %f", &students
+        scanf("%d %s %f", &students)
+    }
+}
