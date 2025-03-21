@@ -21,7 +21,7 @@ int main() {
     average = sum / 7.0;
 
     // Print result rounded to 2 decimal places
-    printf("%.2lf\n", average);
+    printf("Average Temperatur: %.2lf\n", average);
 
     return 0;
 }
