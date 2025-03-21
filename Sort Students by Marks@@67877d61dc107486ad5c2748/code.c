@@ -38,9 +38,9 @@ int main() {
     // Sort students by marks
     sortStudents(students, n);
     
-    // Print sorted students
+    // Print sorted students with correct format
     for (int i = 0; i < n; i++) {
-        printf("%d %s %.2f\n", students[i].roll, students[i].name, students[i].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll, students[i].name, students[i].marks);
     }
 
     return 0;
