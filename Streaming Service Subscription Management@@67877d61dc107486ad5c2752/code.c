@@ -33,7 +33,7 @@ int main() {
 
     printf("Basic: %d Users, Revenue: %.2f; ", basicUsers, basicRevenue);
     printf("Standard: %d Users, Revenue: %.2f; ", standardUsers, standardRevenue);
-    printf("Premium: %d Users, Revenue: %.2f.\n", premiumUsers, premiumRevenue);
+    printf("Premium: %d Users, Revenue: %.2f", premiumUsers, premiumRevenue); // Removed extra period
 
     return 0;
 }
