@@ -1,33 +1,43 @@
 #include <stdio.h>
 
+// Structure definition
 struct Student {
     int roll_number;
-    char name[100];
+    char name[50];
     double marks;
 };
 
+// Function to determine grade based on marks
 char getGrade(double marks) {
-    if (marks >= 85)
+    if (marks >= 85) {
         return 'A';
-    else if (marks >= 70 && marks <= 84)
+    } else if (marks >= 70) {  // Ensures marks from 70 to 84.99 fall in 'B'
         return 'B';
-    else
+    } else {
         return 'C';
+    }
 }
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int N;
+    
+    // Read number of students
+    printf("Enter number of students: ");
+    scanf("%d", &N);
+    
+    struct Student students[N];
 
-    struct Student students[n];
-
-    for (int i = 0; i < n; i++) {
+    // Reading student details
+    for (int i = 0; i < N; i++) {
+        printf("Enter roll number, name, and marks: ");
         scanf("%d %s %lf", &students[i].roll_number, students[i].name, &students[i].marks);
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("Roll Number: %d, Name: %s, Grade: %c\n", 
-               students[i].roll_number, students[i].name, getGrade(students[i].marks));
+    // Display student details with grade
+    printf("\nStudent Grades:\n");
+    for (int i = 0; i < N; i++) {
+        char grade = getGrade(students[i].marks);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", students[i].roll_number, students[i].name, grade);
     }
 
     return 0;
