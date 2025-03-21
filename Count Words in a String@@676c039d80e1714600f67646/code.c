@@ -1,24 +1,33 @@
-// Your code here...#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-int main() {
-    char str[200]; // Buffer size for input string
-    int count = 0; // Word counter
+int countWords(char str[]) {
+    int count = 0;
+    int length = strlen(str);
 
-
-    fgets(str, sizeof(str), stdin); // Read the full string including spaces
-
-    int len = strlen(str);
-
-    // Check if the string contains words
-    for (int i = 0; i < len; i++) {
-        // Check for the start of a new word
+    // Traverse the string
+    for (int i = 0; i < length; i++) {
+        // Check if current character is not a space and the previous character is a space or start of string
         if ((i == 0 || isspace(str[i - 1])) && !isspace(str[i])) {
             count++;
         }
     }
+    
+    return count;
+}
 
-    printf("%d\n", count);
+int main() {
+    char str[1000];  // Assuming max length of input string is 1000 characters
+    
+    // Read the full input line
+    fgets(str, sizeof(str), stdin);
+    
+    // Remove the trailing newline character if present
+    str[strcspn(str, "\n")] = 0;
+
+    // Print the word count
+    printf("%d\n", countWords(str));
+
     return 0;
 }
