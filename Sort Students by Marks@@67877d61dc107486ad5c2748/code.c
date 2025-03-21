@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 
@@ -33,6 +32,16 @@ int main() {
     struct Student students[n];
     
     for (int i = 0; i < n; i++) {
-        scanf("%d %s %f", &students)
+        scanf("%d %s %f", &students[i].roll, students[i].name, &students[i].marks);
     }
+    
+    // Sort students by marks
+    sortStudents(students, n);
+    
+    // Print sorted students
+    for (int i = 0; i < n; i++) {
+        printf("%d %s %.2f\n", students[i].roll, students[i].name, students[i].marks);
+    }
+
+    return 0;
 }
