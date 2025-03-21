@@ -31,7 +31,7 @@ int main() {
         }
 
         // Print output
-        printf("ID: %d, Name: %s, Bonus: %.2lf\n", emp[i].id, emp[i].name, bonus);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2lf\n", emp[i].id, emp[i].name, bonus);
     }
 
     return 0;
