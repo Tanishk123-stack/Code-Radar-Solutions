@@ -31,7 +31,7 @@ int main() {
     }
 
     // Output the results
-    printf("Cars: %d, Trucks: %d, Bikes: %d\n", carToll, truckToll, bikeToll);
+    printf("Cars: %d, Trucks: %d, Bikes: .2f%d\n", carToll, truckToll, bikeToll);
 
     return 0;
 }
