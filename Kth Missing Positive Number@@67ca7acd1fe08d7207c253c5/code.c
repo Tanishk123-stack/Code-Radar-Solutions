@@ -1,20 +1,15 @@
 // Your code here...
-int kthSmallest(int arr[], int n,int k) {
-    for (int i = 0; i < n - 1; i++) {
-        int minIndex = i;
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
+int findKthMissing(int arr[], int n, int k) {
+    int count = 0, num = 1, i = 0;
+    
+    while (count < k) {
+        if (i < n && arr[i] == num) {
+            i++;  
+        } else {
+            count++;  
         }
-       
-        int temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
+        if (count == k) return num;
+        num++;
     }
-    if(k<=n){
-        return arr[k-1];
-    }else{
-        return -1;
-    }
+    return -1;
 }
