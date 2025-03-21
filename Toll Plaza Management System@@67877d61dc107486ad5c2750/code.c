@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 #include <string.h>
 
@@ -6,7 +5,7 @@
 struct Vehicle {
     char number[20];
     char type[10];
-    int toll;
+    float toll;
 };
 
 int main() {
@@ -14,11 +13,11 @@ int main() {
     scanf("%d", &n); // Read number of vehicles
 
     struct Vehicle vehicles[n]; // Array of structures
-    int carToll = 0, truckToll = 0, bikeToll = 0; // Toll counters
+    float carToll = 0, truckToll = 0, bikeToll = 0; // Toll counters
 
     // Input vehicle details
     for (int i = 0; i < n; i++) {
-        scanf("%s %s %d", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
+        scanf("%s %s %f", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
 
         // Categorize and sum up tolls
         if (strcmp(vehicles[i].type, "Car") == 0) {
@@ -30,8 +29,8 @@ int main() {
         }
     }
 
-    // Output the results
-    printf("Cars: %d, Trucks: %d, Bikes: .2f%d\n", carToll, truckToll, bikeToll);
+    // Output the results with 2 decimal places
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n", carToll, truckToll, bikeToll);
 
     return 0;
 }
