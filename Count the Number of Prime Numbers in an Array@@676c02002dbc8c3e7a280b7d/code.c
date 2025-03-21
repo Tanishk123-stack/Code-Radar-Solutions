@@ -1,4 +1,3 @@
-// Your code here...
 
 #include <stdio.h>
 int main(){
@@ -11,16 +10,19 @@ int main(){
     int count=0;
     for(int i=0;i<n;i++){
         int a=arr[i];
-        int rev=0;
-        while(a>0){
-            rev=(rev*10)+a%10;
-            a=a/10;
+        if(a<=1){
+            continue;
+        }else{
+            int isprime=1;
+            for(int i=2;i*i<=a;i++){
+                if(a%i==0){
+                    isprime=0;
+                    break;
+                }
+            }if(isprime){
+                count++;
+            }
         }
-        if(rev==arr[i]){
-            count++;
-        }
-        
     }
     printf("%d",count);
-    return 0;
 }
