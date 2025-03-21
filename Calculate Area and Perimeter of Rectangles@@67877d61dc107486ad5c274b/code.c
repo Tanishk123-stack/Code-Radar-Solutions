@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 struct Rectangle {
@@ -17,9 +16,9 @@ int main() {
     }
     
     for (int i = 0; i < n; i++) {
-        int area = rectangles[i].length * rectangles[i].breadth;
-        int perimeter = 2 * (rectangles[i].length + rectangles[i].breadth);
-        printf("Rectangle %d: Area = %d, Perimeter = %d\n", i + 1, area, perimeter);
+        float area = (float)(rectangles[i].length * rectangles[i].breadth);
+        float perimeter = 2 * (rectangles[i].length + rectangles[i].breadth);
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n", i + 1, area, perimeter);
     }
 
     return 0;
