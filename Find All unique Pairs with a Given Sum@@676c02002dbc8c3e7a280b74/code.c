@@ -17,11 +17,6 @@ int comparePairs(const void *a, const void *b) {
     return p1->second - p2->second; // Sort by second element if first elements are equal
 }
 
-// Comparison function for sorting the array
-int compare(const void *a, const void *b) {
-    return (*(int *)a - *(int *)b);
-}
-
 int main() {
     int N, T;
     
@@ -38,30 +33,18 @@ int main() {
     // Read the target sum
     scanf("%d", &T);
     
-    // Sort the array to ensure uniqueness
-    qsort(arr, N, sizeof(int), compare);
-    
     // Store valid pairs
-    Pair pairs[N]; 
+    Pair pairs[N * N]; // Maximum possible pairs
     int count = 0;
     
-    int left = 0, right = N - 1;
-    
-    while (left < right) {
-        int sum = arr[left] + arr[right];
-        
-        if (sum == T) {
-            pairs[count].first = arr[left];
-            pairs[count].second = arr[right];
-            count++;
-            // Skip duplicates
-            int lastLeft = arr[left], lastRight = arr[right];
-            while (left < right && arr[left] == lastLeft) left++;
-            while (left < right && arr[right] == lastRight) right--;
-        } else if (sum < T) {
-            left++;
-        } else {
-            right--;
+    // Find all unique pairs
+    for (int i = 0; i < N; i++) {
+        for (int j = i + 1; j < N; j++) {
+            if (arr[i] + arr[j] == T) {
+                pairs[count].first = arr[i];
+                pairs[count].second = arr[j];
+                count++;
+            }
         }
     }
     
