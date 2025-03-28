@@ -1,17 +1,16 @@
-// Your code here...
-#include <stdio.h>
-
 int findDuplicate(int arr[], int n) {
     int slow = arr[0];
     int fast = arr[0];
 
-    // Step 1: Detect cycle using Floyd's cycle detection
     do {
+        if (slow < 0 || slow >= n || fast < 0 || fast >= n) {
+            printf("Error: Index out of bounds\n");
+            return -1;
+        }
         slow = arr[slow];
         fast = arr[arr[fast]];
     } while (slow != fast);
-
-    // Step 2: Find the entry point of the cycle (duplicate number)
+    
     slow = arr[0];
     while (slow != fast) {
         slow = arr[slow];
@@ -19,18 +18,4 @@ int findDuplicate(int arr[], int n) {
     }
 
     return slow;
-}
-
-int main() {
-    int n;
-    scanf("%d", &n);
-    
-    int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    printf("%d\n", findDuplicate(arr, n));
-
-    return 0;
 }
