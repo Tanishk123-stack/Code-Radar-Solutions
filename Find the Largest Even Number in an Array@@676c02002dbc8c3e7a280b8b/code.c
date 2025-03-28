@@ -1,24 +1,25 @@
-// Your code here...
 #include <stdio.h>
+#include <limits.h>  // Include for INT_MIN
 
 int main() {
-    int N, num, maxEven = -1;
+    int N, num, maxEven = INT_MIN;  // Use INT_MIN to handle negative even numbers
     
-    // Read the size of the array
     scanf("%d", &N);
     
-    // Iterate through the array elements
     for (int i = 0; i < N; i++) {
         scanf("%d", &num);
         
-        // Check if the number is even and update maxEven
         if (num % 2 == 0 && num > maxEven) {
             maxEven = num;
         }
     }
     
-    // Print the largest even number or -1 if none exists
-    printf("%d\n", maxEven);
+    // If no even number was found, print -1
+    if (maxEven == INT_MIN) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", maxEven);
+    }
     
     return 0;
 }
